@@ -1,3 +1,10 @@
+"""
+tool that use wayback machine, to find hidden ssrf query params, and check if those params are vulnerable,
+you can add your specific query params,
+you need to configure a specific domain that return a response true in json, so that this will make the tool detect ssrf, 
+i suggest use pipedream from requestbin
+"""
+
 import requests
 import re
 from urllib.parse import urlparse, urlencode, urlunparse, parse_qs
